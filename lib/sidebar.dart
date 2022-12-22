@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ppk_uas_client_flutter/dashboard.dart';
 import 'Auth/login.dart';
 import 'User/user_detail.dart';
 import 'api.dart';
@@ -29,6 +30,16 @@ class Sidebar extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => Profile(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Dashboard'),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Dashboard(),
                 ),
               );
             },

@@ -141,7 +141,6 @@ class _ProfileEditState extends State<ProfileEdit> {
                             Navigator.of(context).pop();
                             ScaffoldMessenger.of(context)
                                 .showSnackBar(snackBar);
-                            
                           } else {
                             var errors = response['messages'].values.toList();
                             var error = errors.join('\n');
